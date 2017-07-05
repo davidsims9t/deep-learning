@@ -44,12 +44,25 @@ y = actual value
 
 Perceptron = simple neural network
 
+## Back Propagation
+
 C = Σ.5(ŷ - y) ^ 2
 
-Determines what the error is between the predicted value and the actual value.
+Cost function determines what the error is between the predicted value and the actual value.
 
 One epoch is when you go through an entire data set.
 
-## Books
+## Gradient Descent
+
+Curse of dimensionality - even on the worlds fastest computer it takes a huge amount of time to find the best optimization.
+
+Look at angle of cost function at a point on the grid (the ball), then roll the ball to another point on the grid and repeat until the ball is in the middle. The method ends up being a zig-zag.
+
+## Stochastic Gradient Descent
+
+
+
+## Books & Links
 
 Efficient BackProp - Normalization
+Cross Validated (2015) - Cost functions
