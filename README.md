@@ -60,9 +60,15 @@ Look at angle of cost function at a point on the grid (the ball), then roll the 
 
 ## Stochastic Gradient Descent
 
+Happens when you don't have an optimized neural network. Helps you find the global minimum when there's more fluxuations. It's faster because it doesn't have to load all data into memory.
 
+Batch gradient descent will give you the same result each time, stochastic is chosen at random.
+
+Mini-batch gradient descent - combination of both methods. Does batch stochastic processes.
 
 ## Books & Links
 
 Efficient BackProp - Normalization
 Cross Validated (2015) - Cost functions
+A Neural Network in 13 lines of Python
+Neural Networks and Deep Learning
