@@ -37,6 +37,19 @@ Can be category or a single value.
 ϕ(x) = (1 - e ^ -2x) / (1 - e ^ -2x)
 ```
 
+## How do Neural Networks Work
+
+y = actual value
+ŷ = output value (predicted value)
+
+Perceptron = simple neural network
+
+C = Σ.5(ŷ - y) ^ 2
+
+Determines what the error is between the predicted value and the actual value.
+
+One epoch is when you go through an entire data set.
+
 ## Books
 
 Efficient BackProp - Normalization
