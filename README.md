@@ -50,7 +50,7 @@ C = Σ.5(ŷ - y) ^ 2
 
 Cost function determines what the error is between the predicted value and the actual value.
 
-One epoch is when you go through an entire data set.
+One epoch is when you go through an entire data set. Adjusts all the weights at the same time.
 
 ## Gradient Descent
 
@@ -58,13 +58,23 @@ Curse of dimensionality - even on the worlds fastest computer it takes a huge am
 
 Look at angle of cost function at a point on the grid (the ball), then roll the ball to another point on the grid and repeat until the ball is in the middle. The method ends up being a zig-zag.
 
-## Stochastic Gradient Descent
+### Stochastic Gradient Descent
 
 Happens when you don't have an optimized neural network. Helps you find the global minimum when there's more fluxuations. It's faster because it doesn't have to load all data into memory.
 
 Batch gradient descent will give you the same result each time, stochastic is chosen at random.
 
 Mini-batch gradient descent - combination of both methods. Does batch stochastic processes.
+
+#### Steps
+
+1. Randomly assign weights close to 0, but greater than 0.
+2. Input the first observation of your dataset in the input layer, each layer is one input node.
+3. Forward-propagation: from left-to-right, the neurons are activated in a way that impact of each neuron's activation is limited by the weights. Propagate the activations until getting the predicted result y.
+4. Compare predicted result against the actual result and measure the generated error.
+5. Back-propagation: from right-to-left, the error is back-propagated. Update the weights according to how much they are responsible for the error. The learning rate decides by how much we update the weights.
+6. Repeat steps 1 - 5 and update the weights after each observation (reinforcement learning) or repeat steps 1 - 5 and only update the weights after a batch of observations (batch learning).
+7. When the whole training set has passed thru the entire neural network (ANN), that makes an epoch.
 
 ## Books & Links
 
