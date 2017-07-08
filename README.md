@@ -76,6 +76,12 @@ Mini-batch gradient descent - combination of both methods. Does batch stochastic
 6. Repeat steps 1 - 5 and update the weights after each observation (reinforcement learning) or repeat steps 1 - 5 and only update the weights after a batch of observations (batch learning).
 7. When the whole training set has passed thru the entire neural network (ANN), that makes an epoch.
 
+## Libraries
+
+Theano - computations library (CPU and GPU).
+Tensorflow - computations library.
+Keras - wraps Theano and Tensorflow libraries.
+
 ## Books & Links
 
 Efficient BackProp - Normalization
