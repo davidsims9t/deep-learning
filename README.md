@@ -81,6 +81,8 @@ Mini-batch gradient descent - combination of both methods. Does batch stochastic
 Theano - computations library (CPU and GPU).
 Tensorflow - computations library.
 Keras - wraps Theano and Tensorflow libraries.
+SciPy/NumPy - for preprocessing data
+Pandas - For reading CSV
 
 ## Books & Links
 
