@@ -76,6 +76,39 @@ Mini-batch gradient descent - combination of both methods. Does batch stochastic
 6. Repeat steps 1 - 5 and update the weights after each observation (reinforcement learning) or repeat steps 1 - 5 and only update the weights after a batch of observations (batch learning).
 7. When the whole training set has passed thru the entire neural network (ANN), that makes an epoch.
 
+## Convolutional Neural Networks
+
+You have an input image, process it through a CNN, and Output Label (Image Class).
+
+Example
+
+:) -> CNN -> Happy
+
+B/W Image 2px x 2px - 2d array. Each bit is between 0 and 255 for the pixel color.
+Colored Image 2px x 2px - 3d array. 3 layers (RGB) for each pixel color.  
+
+### Convolutional Operation
+
+(f * g)(t)^def=∫+∞-∞f(T)g(t - T)dT
+
+Input Image (X) Feature Detector = Feature Map
+
+To calculate the feature map compare the matching pixels in the image based on a 3 x 3 pixel grid. If any pixel matches up then add 1 to the total sum.
+
+The feature map allows the computer to isolate the image based on the images defining features (nose, eyes, etc). Gets rid of unimportant data. Each feature map is a layer of feature data with a different feature detector.
+
+Primary goal of the CNN is to isolate certain features.
+
+### ReLU Layer
+
+### Pooling
+
+### Flattening
+
+### Full Connection
+
+### Softmax and Cross-Entropy
+
 ## Libraries
 
 Theano - computations library (CPU and GPU).
@@ -90,17 +123,4 @@ Efficient BackProp - Normalization
 Cross Validated (2015) - Cost functions
 A Neural Network in 13 lines of Python
 Neural Networks and Deep Learning
-
-## Convolutional Neural Networks
-
-### Convolutional Operation
-
-### ReLU Layer
-
-### Pooling
-
-### Flattening
-
-### Full Connection
-
-### Softmax and Cross-Entropy
+Introduction to Computational Neural Networks - Jianxin Wu
