@@ -101,7 +101,14 @@ Primary goal of the CNN is to isolate certain features.
 
 ### ReLU Layer
 
-### Pooling
+Rectifier acts as a filter to break-up linearity. If a color is a linear gradient (e.g. white to black) the black is removed by the Rectifier layer.
+
+### Max Pooling
+
+The ability to recognize an object with different features (textures, patterns, lighting, etc).
+Special variance means it doesn't care if the features are a bit different (distorted) from each other.
+
+To get the pooled feature map from the feature map, you have to take the maximum value from the array. 
 
 ### Flattening
 
@@ -124,3 +131,5 @@ Cross Validated (2015) - Cost functions
 A Neural Network in 13 lines of Python
 Neural Networks and Deep Learning
 Introduction to Computational Neural Networks - Jianxin Wu
+Understanding Convolutional Neural Networks with a Mathematical Model - C.C. Jay Kuo
+Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification.
