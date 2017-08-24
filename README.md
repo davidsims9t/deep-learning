@@ -108,7 +108,9 @@ Rectifier acts as a filter to break-up linearity. If a color is a linear gradien
 The ability to recognize an object with different features (textures, patterns, lighting, etc).
 Special variance means it doesn't care if the features are a bit different (distorted) from each other.
 
-To get the pooled feature map from the feature map, you have to take the maximum value from the array. 
+To get the pooled feature map from the feature map, you have to take the maximum value from the array.
+
+Sub-sampling is a generalization.
 
 ### Flattening
 
@@ -133,3 +135,4 @@ Neural Networks and Deep Learning
 Introduction to Computational Neural Networks - Jianxin Wu
 Understanding Convolutional Neural Networks with a Mathematical Model - C.C. Jay Kuo
 Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification.
+Evaluation of Operations in Convolutional Architectures for Object Recognition
