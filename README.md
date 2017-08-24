@@ -114,6 +114,8 @@ Sub-sampling is a generalization.
 
 ### Flattening
 
+Flatten a pooled feature map (row by row into a column). This can easily be translated to a vector line.
+
 ### Full Connection
 
 ### Softmax and Cross-Entropy
