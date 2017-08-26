@@ -130,19 +130,20 @@ In the final connected neural layer, the neurons get to vote which category it t
 
 ## Libraries
 
-Theano - computations library (CPU and GPU).
-Tensorflow - computations library.
-Keras - wraps Theano and Tensorflow libraries.
-SciPy/NumPy - for preprocessing data
-Pandas - For reading CSV
+- Theano - computations library (CPU and GPU).
+- Tensorflow - computations library.
+- Keras - wraps Theano and Tensorflow libraries.
+- SciPy/NumPy - for preprocessing data
+- Pandas - For reading CSV
 
 ## Books & Links
 
-Efficient BackProp - Normalization
-Cross Validated (2015) - Cost functions
-A Neural Network in 13 lines of Python
-Neural Networks and Deep Learning
-Introduction to Computational Neural Networks - Jianxin Wu
-Understanding Convolutional Neural Networks with a Mathematical Model - C.C. Jay Kuo
-Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification.
-Evaluation of Operations in Convolutional Architectures for Object Recognition
+- Efficient BackProp - Normalization
+- Cross Validated (2015) - Cost functions
+- A Neural Network in 13 lines of Python
+- Neural Networks and Deep Learning
+- Introduction to Computational Neural Networks - Jianxin Wu
+- Understanding Convolutional Neural Networks with a Mathematical Model - C.C. Jay Kuo
+- Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification.
+- Evaluation of Operations in Convolutional Architectures for Object Recognition
+- The 9 Deep Learning Papers You Need to Know About CNNs
