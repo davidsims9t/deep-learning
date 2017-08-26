@@ -31,3 +31,9 @@ classifier.add(Dense(units = 128, activation = 'relu'))
 
 # Use sigmoid because we have a binary outcome
 classifier.add(Dense(units = 1, activation = 'sigmoid'))
+
+# Compile the CNN
+# Use cross entropy because it's categorical data and has a binary outcome
+classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
+
+# Part 2 - Fit CNN to images
