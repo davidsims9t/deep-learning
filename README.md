@@ -118,6 +118,14 @@ Flatten a pooled feature map (row by row into a column). This can easily be tran
 
 ### Full Connection
 
+Add a whole ANN to the CNN. Hidden layers don't have to be fully connected in an ANN, but with a CNN they have to be fully connected. We have two outputs because we need an output per category that we have (i.e. dog and cat). Loss function tells us how well our network is working. Weights are adjusted and feature detectors in an ANN to minimize loss/error.
+
+Weight is between 0 and 1. 0 being it didn't find the feature and 1 being that it did find the feature in the CNN. The more neurons that are attributed (lighting up) to the dog neuron, the more the score increases.
+
+During back-propagation, if a feature is useless to training a network, it is disregarded.
+
+In the final connected neural layer, the neurons get to vote which category it thinks is accurate.
+
 ### Softmax and Cross-Entropy
 
 ## Libraries
