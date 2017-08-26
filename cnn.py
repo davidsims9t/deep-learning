@@ -37,3 +37,32 @@ classifier.add(Dense(units = 1, activation = 'sigmoid'))
 classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
 
 # Part 2 - Fit CNN to images
+from keras.preprocessing.image import ImageDataGenerator
+
+train_datagen = ImageDataGenerator(
+        rescale=1./255, # All pixel values are between 0 and 1
+        shear_range=0.2, # Random transformations
+        zoom_range=0.2,
+        horizontal_flip=True)
+
+# All pixel values are between 0 and 1
+test_datagen = ImageDataGenerator(rescale=1./255)
+
+training_set = train_datagen.flow_from_directory(
+        'dataset/training_set', # Path to training images
+        target_size=(64, 64), # Size of images
+        batch_size=32, # Random sample size
+        class_mode='binary') # Binary or more than 2 categories
+
+test_set = test_datagen.flow_from_directory(
+        'dataset/test_set',
+        target_size=(64, 64),
+        batch_size=32,
+        class_mode='binary')
+
+classifier.fit_generator(
+        training_set,
+        steps_per_epoch=8000, # No. of images per training set
+        epochs=25,
+        validation_data=test_set,
+        validation_steps=2000) # Images in test set
