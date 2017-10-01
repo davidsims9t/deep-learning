@@ -128,6 +128,20 @@ In the final connected neural layer, the neurons get to vote which category it t
 
 ### Softmax and Cross-Entropy
 
+### Recurrent Neural Networks
+
+Parts of Brain:
+
+- Cerebrum
+- Cerebellum
+
+Lobes:
+
+- Frontal Lobe - RNN (short-term memory)
+- Parietal Lobe - Spatial coordination system
+- Temporal Lobe - ANN (long-term memory)
+- Occipital Lobe - CNN (vision)
+
 ## Libraries
 
 - Theano - computations library (CPU and GPU).
