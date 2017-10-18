@@ -128,7 +128,7 @@ In the final connected neural layer, the neurons get to vote which category it t
 
 ### Softmax and Cross-Entropy
 
-### Recurrent Neural Networks
+## Recurrent Neural Networks
 
 Parts of Brain:
 
@@ -141,6 +141,55 @@ Lobes:
 - Parietal Lobe - Spatial coordination system
 - Temporal Lobe - ANN (long-term memory)
 - Occipital Lobe - CNN (vision)
+
+Short-term memory is the ability to know what kind of information was stored in the previous
+neural network and pass that information into the future. You need short-term memory in order to know the context of what's happening now.
+
+### One-to-Many
+
+The ability to make multiple connections from one input.
+
+Example: black and white dog jumps over a bar.
+
+### Many-to-One
+
+The ability to take many inputs and get one output.
+
+Example: sentiment analysis.
+
+### Many-to-Many
+
+The ability to take many inputs and get one output.
+
+Example: Google translator.
+
+### Vanishing Gradient
+
+As the data passes through the neurons and is trained the gradient descent can be large or small.
+
+If Wrec (weights) is small, then you have a vanishing gradient problem.
+If Wrec (weights) is large, then you have an exploding gradient problem.
+
+#### Solutions
+
+1. Exploding Gradient
+  - Truncated Back-propagation
+  - Penalties
+  - Gradient Clipping
+2. Vanishing Gradient
+  - Weight Initialization
+  - Echo State Networks
+  - Long Short-Term Memory Networks (LSTMs)
+
+### LSTMs
+
+If Wrec is 1 the vanishing gradient problem is solved. Has a memory cell that has a free flow
+of information. No issues with back-propagation. Any line in the LSTM is a vector.
+
+- Vector transfer is a simple transfer of vector data.
+- Concatenation mean that there are two pipes running in parallel to each other.
+- Copy is splitting a vector two different locations.
+- Point-wise Operation
 
 ## Libraries
 
@@ -161,3 +210,6 @@ Lobes:
 - Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification.
 - Evaluation of Operations in Convolutional Architectures for Object Recognition
 - The 9 Deep Learning Papers You Need to Know About CNNs
+- On the difficulty of training recurrent neural networks
+- http://colah.github.io/
+- http://karpathy.github.io/
