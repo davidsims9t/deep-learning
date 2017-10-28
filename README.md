@@ -76,6 +76,11 @@ Mini-batch gradient descent - combination of both methods. Does batch stochastic
 6. Repeat steps 1 - 5 and update the weights after each observation (reinforcement learning) or repeat steps 1 - 5 and only update the weights after a batch of observations (batch learning).
 7. When the whole training set has passed thru the entire neural network (ANN), that makes an epoch.
 
+### The Bias-Variance Trade-off
+
+Variance trade-off happens when there's a lot of variance in the results and because of that each time you train your neural network, you can get varying results of accuracy. k-Fold Cross Validation seeks to fix this issue. It takes the training set and splits it into 10 iterations with 10 folds.
+You can take an average or standard deviation of the iterations and compare them.
+
 ## Convolutional Neural Networks
 
 You have an input image, process it through a CNN, and Output Label (Image Class).
