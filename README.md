@@ -81,6 +81,8 @@ Mini-batch gradient descent - combination of both methods. Does batch stochastic
 Variance trade-off happens when there's a lot of variance in the results and because of that each time you train your neural network, you can get varying results of accuracy. k-Fold Cross Validation seeks to fix this issue. It takes the training set and splits it into 10 iterations with 10 folds.
 You can take an average or standard deviation of the iterations and compare them.
 
+Use dropout when you have high variance and overfitting so that the neurons can run more independently of each other. Drop out will randomly disable neurons during each iteration.
+
 ## Convolutional Neural Networks
 
 You have an input image, process it through a CNN, and Output Label (Image Class).
@@ -195,6 +197,27 @@ of information. No issues with back-propagation. Any line in the LSTM is a vecto
 - Concatenation mean that there are two pipes running in parallel to each other.
 - Copy is splitting a vector two different locations.
 - Point-wise Operation
+
+## Self-Organizing Maps (SOMs)
+
+Supervised deep-learning methods are ANN, CNN, and RNNs. Unsupervised learning includes SOMs, Deep Boltzmann Machines, and AutoEncoders.
+
+SOMs are useful for feature detection. Useful for reducing dimensionality. Reduces columns into a 2D map.
+
+### K-Means Clustering
+
+Allows you to categorize groups.
+
+Steps:
+
+1. Choose the number of clusters
+2. Select at random k points (centroids).
+3. Assign each data point to each the closest centroids.
+4. Compute and place the new centroids in the clusters.
+5. Reassign each data point to the new closest centroid. If reassignment took place repeat step 4.
+
+Best matching unit is the unit with the calculated weight that is closest value.
+Weights are updated based on the BMU.
 
 ## Libraries
 
