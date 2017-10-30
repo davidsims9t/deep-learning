@@ -219,6 +219,15 @@ Steps:
 Best matching unit is the unit with the calculated weight that is closest value.
 Weights are updated based on the BMU.
 
+### How to SOMs Learn?
+
+- SOMs maintain the topology of the input set.
+- SOMs reveal correlations that are not easily defined.
+- SOMs classify data without supervision.
+- No target vector or back propagation required
+- No lateral connections between output nodes
+
+
 ## Libraries
 
 - Theano - computations library (CPU and GPU).
@@ -241,3 +250,4 @@ Weights are updated based on the BMU.
 - On the difficulty of training recurrent neural networks
 - http://colah.github.io/
 - http://karpathy.github.io/
+- Kohohen's Self Organizing Feature Maps (http://www.ai-junkie.com/ann/som/som1.html)
