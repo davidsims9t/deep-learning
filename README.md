@@ -227,6 +227,10 @@ Weights are updated based on the BMU.
 - No target vector or back propagation required
 - No lateral connections between output nodes
 
+### Choosing the right number of clusters
+
+WCSS = Σ distance(Pi, C1) ^ 2 + Σ distance(Pi, C2) + ...
+       Pi in cluster 1          Pi in cluster 2
 
 ## Libraries
 
