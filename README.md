@@ -232,6 +232,35 @@ Weights are updated based on the BMU.
 WCSS = Σ distance(Pi, C1) ^ 2 + Σ distance(Pi, C2) + ...
        Pi in cluster 1          Pi in cluster 2
 
+## Botzmann Machines
+
+Describes a system of interlinked nodes, some of which are hidden and some of which are visible.
+
+### Energy-Based Models
+
+Based off of the Botzmann distribution model.
+
+```
+Pi = (e ^ (-εi/kT)) / (Σ ^ M j = 1) e ^ (-εj/kT)
+```
+
+Pi represents the probability of the state of your system.
+
+e = exponent
+-εi = energy of system
+kT = temperature of system
+(Σ ^ M j = 1) e ^ (-εj/kT) = all possibilities of the system
+
+Weights will dictate the lowest energy state in the system.
+The state will naturally want to go to the lowest energy state possible.
+
+### Restricted Boltzmann-Machine
+
+Hidden nodes cannot connect to each other and visible nodes cannot connect to each other. Useful for
+building a recommender system.
+
+### Contrastive Divergence
+
 ## Libraries
 
 - Theano - computations library (CPU and GPU).
@@ -255,3 +284,4 @@ WCSS = Σ distance(Pi, C1) ^ 2 + Σ distance(Pi, C2) + ...
 - http://colah.github.io/
 - http://karpathy.github.io/
 - Kohohen's Self Organizing Feature Maps (http://www.ai-junkie.com/ann/som/som1.html)
+- Tutorial on Energy-Based Learning (http://yann.lecun.com/exdb/publis/pdf/lecun-06.pdf)
