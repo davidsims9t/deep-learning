@@ -267,6 +267,10 @@ During contrastive divergence the hidden nodes compare the aggregate weights fro
 
 Uses "awake-sleep" algorithms which train from visible to hidden nodes (awake) and from hidden to visible nodes (asleep).
 
+### Deep Boltzmann Machines
+
+Similar to DBNs except it doesn't use the awake-sleep algorithms. Can extract features that are more complicated. Better for complex tasks.
+
 ## Libraries
 
 - Theano - computations library (CPU and GPU).
@@ -295,3 +299,4 @@ Uses "awake-sleep" algorithms which train from visible to hidden nodes (awake) a
 - Greedy Layer-Wise Training of Deep Networks (http://www.iro.umontreal.ca/~lisa/pointeurs/BengioNips2006All.pdf)
 - The wake-sleep algorithm for unsupervised
 neural networks (http://www.gatsby.ucl.ac.uk/~dayan/papers/hdfn95.pdf)
+- Deep Boltzmann Machines (http://www.utstat.toronto.edu/~rsalakhu/papers/dbm.pdf)
