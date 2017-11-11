@@ -234,7 +234,7 @@ WCSS = Σ distance(Pi, C1) ^ 2 + Σ distance(Pi, C2) + ...
 
 ## Botzmann Machines
 
-Describes a system of interlinked nodes, some of which are hidden and some of which are visible.
+Describes a system of interlinked nodes, some of which are hidden and some of which are visible. Energy is represented by weights.
 
 ### Energy-Based Models
 
@@ -261,6 +261,10 @@ building a recommender system.
 
 ### Contrastive Divergence
 
+During contrastive divergence the hidden nodes compare the aggregate weights from the visible nodes and then after the calculation is done in the hidden nodes, then the visible nodes weights are adjusted based on the result of the calculation. The process is repeated until the hidden nodes values are the same as the visible nodes values.
+
+
+
 ## Libraries
 
 - Theano - computations library (CPU and GPU).
@@ -285,3 +289,4 @@ building a recommender system.
 - http://karpathy.github.io/
 - Kohohen's Self Organizing Feature Maps (http://www.ai-junkie.com/ann/som/som1.html)
 - Tutorial on Energy-Based Learning (http://yann.lecun.com/exdb/publis/pdf/lecun-06.pdf)
+- A fast learning algorithm for deep belief nets (http://www.cs.toronto.edu/~hinton/absps/fastnc.pdf)
