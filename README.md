@@ -278,6 +278,7 @@ Similar to DBNs except it doesn't use the awake-sleep algorithms. Can extract fe
 - Keras - wraps Theano and Tensorflow libraries.
 - SciPy/NumPy - for preprocessing data
 - Pandas - For reading CSV
+- PyTorch - 
 
 ## Books & Links
 
@@ -300,3 +301,4 @@ Similar to DBNs except it doesn't use the awake-sleep algorithms. Can extract fe
 - The wake-sleep algorithm for unsupervised
 neural networks (http://www.gatsby.ucl.ac.uk/~dayan/papers/hdfn95.pdf)
 - Deep Boltzmann Machines (http://www.utstat.toronto.edu/~rsalakhu/papers/dbm.pdf)
+- PyTorch Docker (https://github.com/pytorch/pytorch)
