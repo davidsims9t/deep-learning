@@ -263,7 +263,9 @@ building a recommender system.
 
 During contrastive divergence the hidden nodes compare the aggregate weights from the visible nodes and then after the calculation is done in the hidden nodes, then the visible nodes weights are adjusted based on the result of the calculation. The process is repeated until the hidden nodes values are the same as the visible nodes values.
 
+### Deep-Belief Networks (DBN)
 
+Uses "awake-sleep" algorithms which train from visible to hidden nodes (awake) and from hidden to visible nodes (asleep).
 
 ## Libraries
 
@@ -290,3 +292,6 @@ During contrastive divergence the hidden nodes compare the aggregate weights fro
 - Kohohen's Self Organizing Feature Maps (http://www.ai-junkie.com/ann/som/som1.html)
 - Tutorial on Energy-Based Learning (http://yann.lecun.com/exdb/publis/pdf/lecun-06.pdf)
 - A fast learning algorithm for deep belief nets (http://www.cs.toronto.edu/~hinton/absps/fastnc.pdf)
+- Greedy Layer-Wise Training of Deep Networks (http://www.iro.umontreal.ca/~lisa/pointeurs/BengioNips2006All.pdf)
+- The wake-sleep algorithm for unsupervised
+neural networks (http://www.gatsby.ucl.ac.uk/~dayan/papers/hdfn95.pdf)
