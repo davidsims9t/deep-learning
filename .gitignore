@@ -2,5 +2,6 @@ dataset
 .DS_Store
 __pycache__
 pytorch
-boltzmann/ml-latest
-boltzmann/ml-latest-small
+boltzmann/ml-1m
+boltzmann/ml-100k
+
