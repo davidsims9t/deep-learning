@@ -271,6 +271,34 @@ Uses "awake-sleep" algorithms which train from visible to hidden nodes (awake) a
 
 Similar to DBNs except it doesn't use the awake-sleep algorithms. Can extract features that are more complicated. Better for complex tasks.
 
+## Auto Encoders
+
+Directed type of neural network (left-to-right). Visible nodes are encoded and transferred into hidden nodes which then decode the value and produce visible output nodes.
+
+- Can be used for feature detection.
+- Can be used for recommender systems.
+
+Auto encoders use -1 or 1 as a multiplier during encoding to calculate the weights.
+They also have a Softmax function at the end. Takes the highest value and turns it into 1 and everything else into 0.
+
+### Training
+
+1. Each row (observation) needs to be a unique user that rated movies. The rated movie scores in the columns are called features.
+2. The first user goes into the network. The input vector x = (r1, r2, ...) contains all the ratings for the movies.
+3. The input vector x is encoded into a vector z of lower dimensions by a mapping function (sigmoid).
+
+```
+z = f(Wx + b)
+```
+
+W is input vector of weights and b is the bias.
+
+4. z is decoded into the output vector y of the same dimensions as x, aiming to replicate the input vector x.
+5. The reconstruction error d(x, y) = ||x-y|| is computed. The goal is to minimize it.
+6. Back-propagation: from right to the left, the error is back-propagated. The weights are updated according to how much they are responsible for the error. The learning rate decides by how much we update the weights.
+7. Repeat steps 1 - 6 and update the weights after each observation (reinforcement learning). Or repeat steps 1 - 6 but update the weights only after a batch of observations (Batch Learning).
+8. When the whole training set passed through the ANN, that completed one epoch. Redo more epochs.
+
 ## Libraries
 
 - Theano - computations library (CPU and GPU).
@@ -278,7 +306,7 @@ Similar to DBNs except it doesn't use the awake-sleep algorithms. Can extract fe
 - Keras - wraps Theano and Tensorflow libraries.
 - SciPy/NumPy - for preprocessing data
 - Pandas - For reading CSV
-- PyTorch - 
+- PyTorch -
 
 ## Books & Links
 
@@ -302,3 +330,4 @@ Similar to DBNs except it doesn't use the awake-sleep algorithms. Can extract fe
 neural networks (http://www.gatsby.ucl.ac.uk/~dayan/papers/hdfn95.pdf)
 - Deep Boltzmann Machines (http://www.utstat.toronto.edu/~rsalakhu/papers/dbm.pdf)
 - PyTorch Docker (https://github.com/pytorch/pytorch)
+- Neural Networks Are Impressively Good At Compression (https://probablydance.com/2016/04/30/neural-networks-are-impressively-good-at-compression/)
