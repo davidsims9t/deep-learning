@@ -303,6 +303,10 @@ W is input vector of weights and b is the bias.
 
 Creates a constraint on input layers to not always use all the same hidden layers during a single pass.
 
+### Denoising Autoencoders
+
+Randomly turn input nodes into 0s. Compare output with the original values. Helps combat issues with the input being directly copied to the output. 
+
 ## Libraries
 
 - Theano - computations library (CPU and GPU).
@@ -339,3 +343,5 @@ neural networks (http://www.gatsby.ucl.ac.uk/~dayan/papers/hdfn95.pdf)
 - Sparse Autoencoder (http://mccormickml.com/2014/05/30/deep-learning-tutorial-sparse-autoencoder/)
 - Deep Learning: Sparse Autoencoders (http://www.ericlwilkinson.com/blog/2014/11/19/deep-learning-sparse-autoencoders)
 - k-Sparse Autoencoders (https://arxiv.org/abs/1312.5663)
+- Extracting and Composing Robust Features with Denoising
+Autoencoders (http://www.cs.toronto.edu/~larocheh/publications/icml-2008-denoising-autoencoders.pdf)
