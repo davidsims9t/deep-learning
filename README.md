@@ -311,6 +311,10 @@ Randomly turn input nodes into 0s. Compare output with the original values. Help
 
 Levelerages the training process by adding a penalty to the loss function if the value is directly copied from the the input.
 
+### Stacked Autoencoders
+
+An additional hidden layer of encoding.
+
 ## Libraries
 
 - Theano - computations library (CPU and GPU).
@@ -350,3 +354,4 @@ neural networks (http://www.gatsby.ucl.ac.uk/~dayan/papers/hdfn95.pdf)
 - Extracting and Composing Robust Features with Denoising
 Autoencoders (http://www.cs.toronto.edu/~larocheh/publications/icml-2008-denoising-autoencoders.pdf)
 - Contractive Autoencoders (http://www.icml-2011.org/papers/455_icmlpaper.pdf)
+- Stacked Autoencoders (http://www.jmlr.org/papers/volume11/vincent10a/vincent10a.pdf)
