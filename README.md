@@ -307,6 +307,10 @@ Creates a constraint on input layers to not always use all the same hidden layer
 
 Randomly turn input nodes into 0s. Compare output with the original values. Helps combat issues with the input being directly copied to the output. 
 
+### Contractive Autoencoders
+
+Levelerages the training process by adding a penalty to the loss function if the value is directly copied from the the input.
+
 ## Libraries
 
 - Theano - computations library (CPU and GPU).
@@ -345,3 +349,4 @@ neural networks (http://www.gatsby.ucl.ac.uk/~dayan/papers/hdfn95.pdf)
 - k-Sparse Autoencoders (https://arxiv.org/abs/1312.5663)
 - Extracting and Composing Robust Features with Denoising
 Autoencoders (http://www.cs.toronto.edu/~larocheh/publications/icml-2008-denoising-autoencoders.pdf)
+- Contractive Autoencoders (http://www.icml-2011.org/papers/455_icmlpaper.pdf)
