@@ -299,6 +299,10 @@ W is input vector of weights and b is the bias.
 7. Repeat steps 1 - 6 and update the weights after each observation (reinforcement learning). Or repeat steps 1 - 6 but update the weights only after a batch of observations (Batch Learning).
 8. When the whole training set passed through the ANN, that completed one epoch. Redo more epochs.
 
+### Sparse Autoencoders
+
+Creates a constraint on input layers to not always use all the same hidden layers during a single pass.
+
 ## Libraries
 
 - Theano - computations library (CPU and GPU).
@@ -331,3 +335,7 @@ neural networks (http://www.gatsby.ucl.ac.uk/~dayan/papers/hdfn95.pdf)
 - Deep Boltzmann Machines (http://www.utstat.toronto.edu/~rsalakhu/papers/dbm.pdf)
 - PyTorch Docker (https://github.com/pytorch/pytorch)
 - Neural Networks Are Impressively Good At Compression (https://probablydance.com/2016/04/30/neural-networks-are-impressively-good-at-compression/)
+- Building Autoencoders in Keras (https://blog.keras.io/building-autoencoders-in-keras.html)
+- Sparse Autoencoder (http://mccormickml.com/2014/05/30/deep-learning-tutorial-sparse-autoencoder/)
+- Deep Learning: Sparse Autoencoders (http://www.ericlwilkinson.com/blog/2014/11/19/deep-learning-sparse-autoencoders)
+- k-Sparse Autoencoders (https://arxiv.org/abs/1312.5663)
