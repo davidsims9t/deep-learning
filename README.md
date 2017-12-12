@@ -331,6 +331,16 @@ y represents the point and y hat represents the point on the line of best fit.
 
 Dependent variables (DV) is y. b sub 1 * x sub 1, b sub 2 * x sub 2 are (IV).
 
+### Logistic Regression Intuition
+
+The formula for logistic regression is:
+
+```
+ln(p / 1 - p) = b sub 0 + b sub 1 * x
+```
+
+The line is same as the line as for a linear regression, except that it's used to predict probability (p hat).
+
 ## Libraries
 
 - Theano - computations library (CPU and GPU).
