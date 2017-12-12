@@ -319,6 +319,18 @@ An additional hidden layer of encoding.
 
 Deep autoencoders are RBMs stacked onto each other.
 
+## Linear Regression
+
+### Simple Linear Regression
+
+A line of best fit. The equation of the line of best fit is y = b sub 0 + b sub 1 * x sub 1. Where b sub 0 is the y-intercept and b sub 1 * x sub 1 is the independent variable.
+
+y represents the point and y hat represents the point on the line of best fit.
+
+### Multiple Linear Regression
+
+Dependent variables (DV) is y. b sub 1 * x sub 1, b sub 2 * x sub 2 are (IV).
+
 ## Libraries
 
 - Theano - computations library (CPU and GPU).
