@@ -11,3 +11,11 @@ from torch.autograd import Variable
 movies = pd.read_csv('../boltzmann/ml-1m/movies.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')
 users = pd.read_csv('../boltzmann/ml-1m/users.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')
 ratings = pd.read_csv('../boltzmann/ml-1m/ratings.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')
+
+# Preparing the training set
+training_set = pd.read_csv('../boltzmann/ml-100k/u1.base', delimiter = '\t')
+training_set = np.array(training_set, dtype = 'int')
+
+# Preparing the test set
+test_set = pd.read_csv('../boltzmann/ml-100k/u1.test', delimiter = '\t')
+test_set = np.array(test_set, dtype = 'int')
