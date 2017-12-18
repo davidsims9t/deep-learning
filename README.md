@@ -303,6 +303,44 @@ W is input vector of weights and b is the bias.
 
 Creates a constraint on input layers to not always use all the same hidden layers during a single pass.
 
+### Denoising Autoencoders
+
+Randomly turn input nodes into 0s. Compare output with the original values. Helps combat issues with the input being directly copied to the output. 
+
+### Contractive Autoencoders
+
+Levelerages the training process by adding a penalty to the loss function if the value is directly copied from the the input.
+
+### Stacked Autoencoders
+
+An additional hidden layer of encoding.
+
+### Deep Autoencoders
+
+Deep autoencoders are RBMs stacked onto each other.
+
+## Linear Regression
+
+### Simple Linear Regression
+
+A line of best fit. The equation of the line of best fit is y = b sub 0 + b sub 1 * x sub 1. Where b sub 0 is the y-intercept and b sub 1 * x sub 1 is the independent variable.
+
+y represents the point and y hat represents the point on the line of best fit.
+
+### Multiple Linear Regression
+
+Dependent variables (DV) is y. b sub 1 * x sub 1, b sub 2 * x sub 2 are (IV).
+
+### Logistic Regression Intuition
+
+The formula for logistic regression is:
+
+```
+ln(p / 1 - p) = b sub 0 + b sub 1 * x
+```
+
+The line is same as the line as for a linear regression, except that it's used to predict probability (p hat).
+
 ## Libraries
 
 - Theano - computations library (CPU and GPU).
@@ -339,3 +377,8 @@ neural networks (http://www.gatsby.ucl.ac.uk/~dayan/papers/hdfn95.pdf)
 - Sparse Autoencoder (http://mccormickml.com/2014/05/30/deep-learning-tutorial-sparse-autoencoder/)
 - Deep Learning: Sparse Autoencoders (http://www.ericlwilkinson.com/blog/2014/11/19/deep-learning-sparse-autoencoders)
 - k-Sparse Autoencoders (https://arxiv.org/abs/1312.5663)
+- Extracting and Composing Robust Features with Denoising
+Autoencoders (http://www.cs.toronto.edu/~larocheh/publications/icml-2008-denoising-autoencoders.pdf)
+- Contractive Autoencoders (http://www.icml-2011.org/papers/455_icmlpaper.pdf)
+- Stacked Autoencoders (http://www.jmlr.org/papers/volume11/vincent10a/vincent10a.pdf)
+- Deep Autoencoders (https://www.cs.toronto.edu/~hinton/science.pdf)
